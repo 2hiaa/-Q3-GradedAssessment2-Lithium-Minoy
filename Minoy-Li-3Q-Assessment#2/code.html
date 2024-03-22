@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="RN"></p>
+
+    <script>
+
+    // sorry late submission D:
+
+        function Tent() {
+            var rannum = Math.floor(Math.random() * 1001);
+
+            var ski = (rannum%1000) - (rannum%100);
+            var bi =(rannum%100) - (rannum%10) ;
+            var di = rannum % 10;
+
+            var dop = new Date();
+    
+var output = "<h3> Randomly generated Number: </h3>" + rannum  + "<br>"
++ "<br>Breakdown: " + ski + ", " + bi + ", " + di + 
+"<br>Current Date and Time of the Printing: " + dop.toLocaleString();
+    
+document.getElementById("RN").innerHTML = output;
+
+
+        }
+    
+        Tent();
+
+
+</script>
+    
+</body>
+</html>
